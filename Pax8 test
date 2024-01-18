@@ -1,0 +1,12 @@
+import requests
+
+url = "https://api.pax8.com/v1/companies"
+
+headers = {
+    "accept": "application/json",
+    "authorization": "Bearer RXaGlav650hsoqCCjZ6nb09IrNTarun9"
+}
+
+response = requests.get(url, headers=headers)
+
+print(response.text)
